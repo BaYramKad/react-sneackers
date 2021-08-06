@@ -1,0 +1,24 @@
+
+
+.parent {
+    position: relative;
+    margin-top: 10px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        border-top: 2px solid black;
+        opacity: 0.1;
+    }
+    
+}
+.title {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+// .hr {
+//     background-color: red;
+// }
