@@ -13,7 +13,7 @@ const PositionCart = ({ image, title, description }) => {
               <p>{ description }</p>
               <div>
                 <button onClick={() => setCart(false)} className={DrawerStyles.greenButton}>
-                  <img className={DrawerStyles.emptyArrow} src='/img/back-main.svg' alt='back'/>
+                  <img className={DrawerStyles.emptyArrow} src='img/back-main.svg' alt='back'/>
                   Вернуться назад
                 </button>
               </div>
