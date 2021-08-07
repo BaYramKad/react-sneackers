@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/BaYramKad/react-sneackers.git/static/css/main.ab0cfcf0.chunk.css",
-    "main.js": "/BaYramKad/react-sneackers.git/static/js/main.e7eb9bc6.chunk.js",
-    "main.js.map": "/BaYramKad/react-sneackers.git/static/js/main.e7eb9bc6.chunk.js.map",
-    "runtime-main.js": "/BaYramKad/react-sneackers.git/static/js/runtime-main.65b4c4f3.js",
-    "runtime-main.js.map": "/BaYramKad/react-sneackers.git/static/js/runtime-main.65b4c4f3.js.map",
-    "static/css/2.caa02cb8.chunk.css": "/BaYramKad/react-sneackers.git/static/css/2.caa02cb8.chunk.css",
-    "static/js/2.994ef980.chunk.js": "/BaYramKad/react-sneackers.git/static/js/2.994ef980.chunk.js",
-    "static/js/2.994ef980.chunk.js.map": "/BaYramKad/react-sneackers.git/static/js/2.994ef980.chunk.js.map",
-    "index.html": "/BaYramKad/react-sneackers.git/index.html",
-    "static/css/2.caa02cb8.chunk.css.map": "/BaYramKad/react-sneackers.git/static/css/2.caa02cb8.chunk.css.map",
-    "static/css/main.ab0cfcf0.chunk.css.map": "/BaYramKad/react-sneackers.git/static/css/main.ab0cfcf0.chunk.css.map",
-    "static/js/2.994ef980.chunk.js.LICENSE.txt": "/BaYramKad/react-sneackers.git/static/js/2.994ef980.chunk.js.LICENSE.txt"
+    "main.css": "/react-sneackers/static/css/main.ab0cfcf0.chunk.css",
+    "main.js": "/react-sneackers/static/js/main.e7eb9bc6.chunk.js",
+    "main.js.map": "/react-sneackers/static/js/main.e7eb9bc6.chunk.js.map",
+    "runtime-main.js": "/react-sneackers/static/js/runtime-main.39042a7c.js",
+    "runtime-main.js.map": "/react-sneackers/static/js/runtime-main.39042a7c.js.map",
+    "static/css/2.caa02cb8.chunk.css": "/react-sneackers/static/css/2.caa02cb8.chunk.css",
+    "static/js/2.994ef980.chunk.js": "/react-sneackers/static/js/2.994ef980.chunk.js",
+    "static/js/2.994ef980.chunk.js.map": "/react-sneackers/static/js/2.994ef980.chunk.js.map",
+    "index.html": "/react-sneackers/index.html",
+    "static/css/2.caa02cb8.chunk.css.map": "/react-sneackers/static/css/2.caa02cb8.chunk.css.map",
+    "static/css/main.ab0cfcf0.chunk.css.map": "/react-sneackers/static/css/main.ab0cfcf0.chunk.css.map",
+    "static/js/2.994ef980.chunk.js.LICENSE.txt": "/react-sneackers/static/js/2.994ef980.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.65b4c4f3.js",
+    "static/js/runtime-main.39042a7c.js",
     "static/css/2.caa02cb8.chunk.css",
     "static/js/2.994ef980.chunk.js",
     "static/css/main.ab0cfcf0.chunk.css",
