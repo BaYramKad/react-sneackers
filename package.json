@@ -1,7 +1,7 @@
 {
   "name": "react-sneakers",
-  "homepage": "https://bayramkad.github.io/react-sneakers/",
   "version": "0.1.0",
+  "homepage": "https://bayramkad.github.io/react-sneackers/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
