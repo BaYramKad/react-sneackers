@@ -10,7 +10,7 @@ function Favorites(props) {
     return (
         <div className="content p-40 justify-center">
             <div className="d-flex align-center">
-                <NavLink to="/"> 
+                <NavLink to=""> 
                     <img src="img/come-back.svg" alt="comeBack" />
                 </NavLink>
                 <h1 className='search-title justify-start ml-20'>Мои закладки</h1>
