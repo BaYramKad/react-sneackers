@@ -22,7 +22,7 @@ export const Orders = () => {
         <div className="content p-40 justify-center">
             <div className="d-flex align-center">
                 <NavLink to=""> 
-                    <img src="img/come-back.svg" alt="comeBack" />
+                    <img src="/img/come-back.svg" alt="comeBack" />
                 </NavLink>
                 <h1 className='search-title justify-start ml-20'>Мои заказы</h1>
             </div>
