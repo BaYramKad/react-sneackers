@@ -39,7 +39,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
             <div className={CardStyles.favorite}>
                {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? "img/heart-liked.svg" : "img/heart-unliked.svg"} alt="favorite" />}
               </div>
-              <img width={133} height={112} src={url} alt="Sneakers" />
+              <img width={133} height={112} src="img/sneakers/1.jpg" alt="Sneakers" />
               <h5>{title}</h5>
               <div className="d-flex justify-between align-center">
                 <div className="d-flex flex-column">
@@ -47,7 +47,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
                   <b>{price} руб.</b>
                 </div>
                 { onPlus && <button className={CardStyles.button} onClick={onClickPlus}>
-                    <img src={ changeActiveAddToCart(id) ? '.img/btn-checked.svg' : 'img/plus.svg'}  alt="Plus" />
+                    <img src={ changeActiveAddToCart(id) ? 'img/btn-checked.svg' : 'img/plus.svg'}  alt="Plus" />
                   </button> }
             </div>
           </div>

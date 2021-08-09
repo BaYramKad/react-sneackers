@@ -23,10 +23,10 @@ function Header(props) {
           <img width={18} height={18} src="img/cart.svg" alt='cart'/>
           <span className={HeaderStyles.price}>{totalPrice} руб.</span>
         </li>
-        <NavLink to='favorites' className={HeaderStyles.favorites}>
+        <NavLink to='favorites/' className={HeaderStyles.favorites}>
           <img  width={18} src="img/favorites.svg" alt='favorites'/>
         </NavLink>
-          <NavLink to='orders' className={HeaderStyles.favorites}>
+          <NavLink to='orders/' className={HeaderStyles.favorites}>
             <img width={18} src="img/user.svg" alt='user'/>
           </NavLink>
       </ul>
