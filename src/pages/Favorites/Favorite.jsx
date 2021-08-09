@@ -18,10 +18,10 @@ function Favorites(props) {
             <div className="d-flex flex-wrap">
                 {
                     favorites.map((item, i) => <Card {...item} 
-                    favorited={true}
-                    key={i}
-                    onFavorites={ (obj => props.addInToFavorites(obj)) } 
-                    onPlus={ (obj) => props.addItemToCart(obj)}  />)
+                        favorited={true}
+                        key={i}
+                        onFavorites={ (obj => props.addInToFavorites(obj)) } 
+                        onPlus={ (obj) => props.addItemToCart(obj)}  />)
                 }
             </div>
         </div>

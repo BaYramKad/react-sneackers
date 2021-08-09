@@ -10,7 +10,7 @@ export const OrderNumber = (props) => {
             <span className={styleOrders.title}>{`Ваш заказ №${props.orderId}`}</span>
             <div className={`d-flex flex-wrap ${styleOrders.parent}`}>
             {
-               ( props.isLoading ? [...Array(8)] : props.items.slice(1)).map((item, i) => <Card {...item}  key={i} isLoading={props.isLoading} />) 
+                props.items.slice(1).map((item, i) => <Card {...item}  key={i} isLoading={props.isLoading} />) 
             }
             </div>
         </div>

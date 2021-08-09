@@ -11,7 +11,7 @@ function Header(props) {
 
   return (
     <header className={`d-flex justify-between align-center p-30 ${HeaderStyles.header}`}>
-      <NavLink to='' className="d-flex align-center">
+      <NavLink to='/react-sneackers/' className="d-flex align-center">
         <img width={40} height={40} src='img/logo.png' alt='logo' />
         <div>
           <h3 className="text-uppercase">React Sneakers</h3>
@@ -23,10 +23,10 @@ function Header(props) {
           <img width={18} height={18} src="img/cart.svg" alt='cart'/>
           <span className={HeaderStyles.price}>{totalPrice} руб.</span>
         </li>
-        <NavLink to='favorites/' className={HeaderStyles.favorites}>
+        <NavLink to='/favorites' className={HeaderStyles.favorites}>
           <img  width={18} src="img/favorites.svg" alt='favorites'/>
         </NavLink>
-          <NavLink to='orders/' className={HeaderStyles.favorites}>
+          <NavLink to='/orders' className={HeaderStyles.favorites}>
             <img width={18} src="img/user.svg" alt='user'/>
           </NavLink>
       </ul>

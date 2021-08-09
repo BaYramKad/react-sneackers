@@ -4,14 +4,11 @@ import React from 'react'
 import AppContext from '../../context'
 import ContentLoader from "react-content-loader"
 
-import imgLiked from "img/heart-liked.svg"
-import imgUnliked from ".img/heart-unliked.svg"
-
 function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, favorited = false} ) {
   const { changeActiveAddToCart} = React.useContext(AppContext)
   const [isFavorite, setIsFavorite] = React.useState(favorited);
   const obj = {url, title, price, id, parentId: id};
-  console.log(url);
+
   const onClickPlus = () => {
     onPlus(obj)
   }
@@ -40,7 +37,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
             </ContentLoader> : 
           <div>
             <div className={CardStyles.favorite}>
-               {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? imgLiked : imgUnliked} alt="favorite" />}
+               {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? "img/heart-liked.svg" : "img/heart-unliked.svg"} alt="favorite" />}
               </div>
               <img width={133} height={112} src={url} alt="Sneakers" />
               <h5>{title}</h5>
@@ -60,3 +57,5 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
 }
 
 export default Card;
+
+

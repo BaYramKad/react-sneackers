@@ -40,7 +40,6 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
         <h2 className="d-flex justify-between mb-30">
           Корзина <img className="cu-p" src="img/btn-remove.svg" alt="Remove" onClick={onCloseCart}/>
         </h2>
- 
         {
           cartItems.length > 0 
           ? 
