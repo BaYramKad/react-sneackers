@@ -38,7 +38,7 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
     <div className={`${DrawerStyles.overlay} ${isCart ? DrawerStyles.overlayVisible : ''} `}>
       <div className={DrawerStyles.drawer}>
         <h2 className="d-flex justify-between mb-30">
-          Корзина <img className="cu-p" src="/img/btn-remove.svg" alt="Remove" onClick={onCloseCart}/>
+          Корзина <img className="cu-p" src="img/btn-remove.svg" alt="Remove" onClick={onCloseCart}/>
         </h2>
         {
           cartItems.length > 0 
@@ -57,7 +57,7 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
                       <p className="mb-5">{item.title}</p>
                       <b>{item.price} руб.</b>
                     </div>
-                    <img onClick={ () => removeCard(item.id)} className={DrawerStyles.removeBtn} src="/img/btn-remove.svg" alt="Remove" />
+                    <img onClick={ () => removeCard(item.id)} className={DrawerStyles.removeBtn} src="img/btn-remove.svg" alt="Remove" />
                   </div>
                 })
                 }
@@ -76,12 +76,12 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
                   </li>
                 </ul>
                 <button onClick={changeCart} className={DrawerStyles.greenButton}>
-                  Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
+                  Оформить заказ <img src="img/arrow.svg" alt="Arrow" />
                 </button>
               </div>
           </div> 
           : <PositionCart 
-              image={ isOrder ? '/img/order-active.jpg' : '/img/empty-curtain.jpg' }
+              image={ isOrder ? 'img/order-active.jpg' : 'img/empty-curtain.jpg' }
               title={ isOrder ? 'Заказ оформлен!' : 'Корзина пустая'} 
               description={ isOrder ? `Ваш заказ №${orders.id} скоро будет передан курьерской доставке` : 'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ'} />
         }

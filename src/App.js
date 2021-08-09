@@ -100,11 +100,11 @@ function App() {
           <Header onShowCart={() => setCart(true)}/>
             <Drawer onCloseCart={ () => setCart(false)} isCart={isCart} removeCard={removeCard} cartItems={cartItems} />
             
-            <Route path='/favorites'>
+            <Route path='favorites'>
               <Favorites addInToFavorites={addInToFavorites} addItemToCart={addItemToCart}  />  
             </Route>
 
-            <Route path='/react-sneackers' exact>
+            <Route path='' exact>
               <Home
                 items={items}
                 cartItems={cartItems}
@@ -117,7 +117,7 @@ function App() {
                 />
             </Route>
 
-            <Route path='/orders'> 
+            <Route path='orders'> 
              <Orders />
             </Route>
           </div>
