@@ -39,7 +39,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
             <div className={CardStyles.favorite}>
                {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? "/img/heart-liked.svg" : "/img/heart-unliked.svg"} alt="favorite" />}
               </div>
-              <img width={133} height={112} src={url} alt="Sneakers" />
+              <img width={133} height={112} src="/img/btn-checked.svg" alt="Sneakers" />
               <h5>{title}</h5>
               <div className="d-flex justify-between align-center">
                 <div className="d-flex flex-column">

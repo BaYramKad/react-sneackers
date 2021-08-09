@@ -11,8 +11,8 @@ function Header(props) {
 
   return (
     <header className={`d-flex justify-between align-center p-30 ${HeaderStyles.header}`}>
-      <NavLink to='/' className="d-flex align-center">
-        <img width={40} height={40} src='/img/logo.png' alt='logo' />
+      <NavLink to='/react-sneackers' className="d-flex align-center">
+        <img width={40} height={40} src='/img/logotype.png' alt='logo' />
         <div>
           <h3 className="text-uppercase">React Sneakers</h3>
           <p className="opacity-5">Магазин лучших кроссовок</p>

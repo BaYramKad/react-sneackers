@@ -104,7 +104,7 @@ function App() {
               <Favorites addInToFavorites={addInToFavorites} addItemToCart={addItemToCart}  />  
             </Route>
 
-            <Route path='/' exact>
+            <Route path='/react-sneackers' exact>
               <Home
                 items={items}
                 cartItems={cartItems}
