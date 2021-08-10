@@ -26,10 +26,10 @@ function Header(props) {
           <img width={18} height={18} src={cart} alt='cart'/>
           <span className={HeaderStyles.price}>{totalPrice} руб.</span>
         </li>
-        <NavLink to='favorites' className={HeaderStyles.favorites}>
+        <NavLink to='/favorites' className={HeaderStyles.favorites}>
           <img  width={18} src={favorites} alt='favorites'/>
         </NavLink>
-          <NavLink to='orders' className={HeaderStyles.favorites}>
+          <NavLink to='/orders' className={HeaderStyles.favorites}>
             <img width={18} src={orders} alt='user'/>
           </NavLink>
       </ul>

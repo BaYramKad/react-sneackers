@@ -9,6 +9,7 @@ import unliked from './heart-unliked.svg'
 
 import cheked from './btn-checked.svg'
 import plus from './plus.svg'
+import sneakers from './2.jpg'
 
 function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, favorited = false}, props ) {
   const { changeActiveAddToCart} = React.useContext(AppContext)
@@ -23,7 +24,6 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
     setIsFavorite(!isFavorite)
   }
 
-  console.log(props.url);
   return (
     <div className={CardStyles.card}>
         {
@@ -45,7 +45,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
             <div className={CardStyles.favorite}>
                {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? liked : unliked} alt="favorite" />}
               </div>
-              <img width={133} height={112} src={url} alt="Sneakers" />
+              <img width={133} height={112} src={sneakers} alt="Sneakers" />
               <h5>{title}</h5>
               <div className="d-flex justify-between align-center">
                 <div className="d-flex flex-column">

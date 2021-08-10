@@ -16,8 +16,7 @@ export function Home ({
   }) {
      const renderItems = () => {
         const filterItems = items.filter(item => item.title.toLowerCase().includes(searchText.toLowerCase()));
-        console.log(filterItems);
-        return (isLoading ? [...Array(8)] : filterItems).map((item, i) => <Card {...item}
+        return (isLoading ? [...Array(8)] : filterItems).map((item, i) => <Card {...item} 
         key={i}
         onPlus={ (obj) => addItemToCart(obj)} 
         onFavorites={ (obj) => addInToFavorites(obj) }
@@ -35,7 +34,6 @@ export function Home ({
                   { searchText && <img onClick={() => setSearchText('') } className="clear-input cu-p" src={clearInput} alt="Remove"/>}
                 </div>
               </div>
-
               <div className="d-flex flex-wrap justify-start">
                 { renderItems() }
               </div>

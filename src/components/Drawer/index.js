@@ -13,6 +13,7 @@ import active from './order-active.jpg'
 import curtain from './empty-curtain.jpg'
 import arrow from './arrow.svg'
 
+import sneakers from '../Card/2.jpg'
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -55,7 +56,7 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
                   cartItems.map((item, i) => {
                     return <div key={i} className= {`${DrawerStyles.cartItem} d-flex align-center`}>
                     <div
-                      style={ {backgroundImage: `url(${item.url})`}}
+                      style={ {backgroundImage: `url(${sneakers})`}}
                       className={DrawerStyles.cartItemImg}>
                       </div>
 

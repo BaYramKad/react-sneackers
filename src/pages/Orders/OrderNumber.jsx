@@ -5,6 +5,7 @@ import styleOrders from './Order.module.scss'
 
 
 export const OrderNumber = (props) => {
+    console.log(props.items);
     return (
         <div className='content p-40 justify-center'>
             <span className={styleOrders.title}>{`Ваш заказ №${props.orderId}`}</span>

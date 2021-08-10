@@ -3,6 +3,10 @@ import axios from "axios"
 import { OrderNumber } from './OrderNumber'
 import { NavLink } from 'react-router-dom'
 
+import backMain from './come-back.svg'
+import { PositionItems } from '../../components/PositionItems/PositionItems'
+
+import emptyOrder from './logoOrders.png'
 export const Orders = () => {
     const [orders, setOrders] = React.useState([])
     const [isLoading, setIsLoading] = React.useState(true)
@@ -21,12 +25,12 @@ export const Orders = () => {
     return (
         <div className="content p-40 justify-center">
             <div className="d-flex align-center">
-                <NavLink to=""> 
-                    <img src="img/come-back.svg" alt="comeBack" />
+                <NavLink to={process.env.PUBLIC_URL + '/'}> 
+                    <img src={backMain} alt="comeBack" />
                 </NavLink>
                 <h1 className='search-title justify-start ml-20'>Мои заказы</h1>
             </div>
-            {orders.map((item, i) => <OrderNumber items={item} key={i} isLoading={isLoading} orderId={item[0]}/>) }
+            {orders.length <= 0 ? <PositionItems image={emptyOrder} title={ 'У вас нет заказов' } description={'Вы еще не сделали заказ'} /> : orders.map((item, i) => <OrderNumber items={item} key={i} isLoading={isLoading} orderId={item[0]}/>) }
         </div>
     )
 }
