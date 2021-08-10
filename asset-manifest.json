@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/react-sneackers/static/css/main.250e3f87.chunk.css",
-    "main.js": "/react-sneackers/static/js/main.628fe82b.chunk.js",
-    "main.js.map": "/react-sneackers/static/js/main.628fe82b.chunk.js.map",
+    "main.css": "/react-sneackers/static/css/main.07b6a185.chunk.css",
+    "main.js": "/react-sneackers/static/js/main.fd75b26c.chunk.js",
+    "main.js.map": "/react-sneackers/static/js/main.fd75b26c.chunk.js.map",
     "runtime-main.js": "/react-sneackers/static/js/runtime-main.39042a7c.js",
     "runtime-main.js.map": "/react-sneackers/static/js/runtime-main.39042a7c.js.map",
     "static/css/2.caa02cb8.chunk.css": "/react-sneackers/static/css/2.caa02cb8.chunk.css",
-    "static/js/2.b9be7c83.chunk.js": "/react-sneackers/static/js/2.b9be7c83.chunk.js",
-    "static/js/2.b9be7c83.chunk.js.map": "/react-sneackers/static/js/2.b9be7c83.chunk.js.map",
+    "static/js/2.760161ec.chunk.js": "/react-sneackers/static/js/2.760161ec.chunk.js",
+    "static/js/2.760161ec.chunk.js.map": "/react-sneackers/static/js/2.760161ec.chunk.js.map",
     "index.html": "/react-sneackers/index.html",
     "static/css/2.caa02cb8.chunk.css.map": "/react-sneackers/static/css/2.caa02cb8.chunk.css.map",
-    "static/css/main.250e3f87.chunk.css.map": "/react-sneackers/static/css/main.250e3f87.chunk.css.map",
-    "static/js/2.b9be7c83.chunk.js.LICENSE.txt": "/react-sneackers/static/js/2.b9be7c83.chunk.js.LICENSE.txt",
+    "static/css/main.07b6a185.chunk.css.map": "/react-sneackers/static/css/main.07b6a185.chunk.css.map",
+    "static/js/2.760161ec.chunk.js.LICENSE.txt": "/react-sneackers/static/js/2.760161ec.chunk.js.LICENSE.txt",
+    "static/media/2.6cd1ce77.jpg": "/react-sneackers/static/media/2.6cd1ce77.jpg",
     "static/media/arrow.166e2db0.svg": "/react-sneackers/static/media/arrow.166e2db0.svg",
     "static/media/back-main.566fdd2a.svg": "/react-sneackers/static/media/back-main.566fdd2a.svg",
     "static/media/btn-checked.0c4d8afb.svg": "/react-sneackers/static/media/btn-checked.0c4d8afb.svg",
     "static/media/btn-remove.845f3635.svg": "/react-sneackers/static/media/btn-remove.845f3635.svg",
     "static/media/cart.896ad80a.svg": "/react-sneackers/static/media/cart.896ad80a.svg",
     "static/media/clear-input.95ccde10.svg": "/react-sneackers/static/media/clear-input.95ccde10.svg",
+    "static/media/come-back.8b3541be.svg": "/react-sneackers/static/media/come-back.8b3541be.svg",
     "static/media/empty-curtain.7d4fd6e1.jpg": "/react-sneackers/static/media/empty-curtain.7d4fd6e1.jpg",
     "static/media/favorites.09e7654e.svg": "/react-sneackers/static/media/favorites.09e7654e.svg",
     "static/media/heart-liked.bfa36d4d.svg": "/react-sneackers/static/media/heart-liked.bfa36d4d.svg",
@@ -30,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.39042a7c.js",
     "static/css/2.caa02cb8.chunk.css",
-    "static/js/2.b9be7c83.chunk.js",
-    "static/css/main.250e3f87.chunk.css",
-    "static/js/main.628fe82b.chunk.js"
+    "static/js/2.760161ec.chunk.js",
+    "static/css/main.07b6a185.chunk.css",
+    "static/js/main.fd75b26c.chunk.js"
   ]
 }
