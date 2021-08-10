@@ -11,7 +11,6 @@ import axios from 'axios'
 
 import AppContext from './context'
 
-
 function App() {
   const [items, setItems] = React.useState([])
   const [cartItems, setCartItems] = React.useState([])
@@ -71,6 +70,8 @@ function App() {
     setCartItems(prev => prev.filter(item => item.id !== id))
   }
 
+  
+
   const addInToFavorites = async (obj) => {
     try {
       if (favorites.find((favObj) => favObj.id === obj.id)) {
@@ -104,7 +105,7 @@ function App() {
               <Favorites addInToFavorites={addInToFavorites} addItemToCart={addItemToCart}  />  
             </Route>
 
-            <Route path='' exact>
+            <Route path={process.env.PUBLIC_URL + '/'} exact>
               <Home
                 items={items}
                 cartItems={cartItems}

@@ -4,7 +4,13 @@ import React from 'react'
 import AppContext from '../../context'
 import ContentLoader from "react-content-loader"
 
-function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, favorited = false} ) {
+import liked from './heart-liked.svg'
+import unliked from './heart-unliked.svg'
+
+import cheked from './btn-checked.svg'
+import plus from './plus.svg'
+
+function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, favorited = false}, props ) {
   const { changeActiveAddToCart} = React.useContext(AppContext)
   const [isFavorite, setIsFavorite] = React.useState(favorited);
   const obj = {url, title, price, id, parentId: id};
@@ -12,12 +18,12 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
   const onClickPlus = () => {
     onPlus(obj)
   }
-
   const onClickFavorites = () => {
     onFavorites(obj)
     setIsFavorite(!isFavorite)
   }
-  
+
+  console.log(props.url);
   return (
     <div className={CardStyles.card}>
         {
@@ -37,7 +43,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
             </ContentLoader> : 
           <div>
             <div className={CardStyles.favorite}>
-               {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? "img/heart-liked.svg" : "img/heart-unliked.svg"} alt="favorite" />}
+               {onFavorites && <img onClick={onClickFavorites} src={ isFavorite ? liked : unliked} alt="favorite" />}
               </div>
               <img width={133} height={112} src={url} alt="Sneakers" />
               <h5>{title}</h5>
@@ -47,7 +53,7 @@ function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, fa
                   <b>{price} руб.</b>
                 </div>
                 { onPlus && <button className={CardStyles.button} onClick={onClickPlus}>
-                    <img src={ changeActiveAddToCart(id) ? 'img/btn-checked.svg' : 'img/plus.svg'}  alt="Plus" />
+                    <img src={ changeActiveAddToCart(id) ? cheked : plus}  alt="Plus" />
                   </button> }
             </div>
           </div>

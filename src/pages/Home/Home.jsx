@@ -1,7 +1,11 @@
 import React from 'react'
 import Card from "../../components/Card/index";
 
-function Home ({
+
+import search from './search.svg'
+import clearInput from './clear-input.svg'
+
+export function Home ({
     items,
     searchText,
     setSearchText,
@@ -10,10 +14,10 @@ function Home ({
     searchItems,
     isLoading
   }) {
-      const renderItems = () => {
+     const renderItems = () => {
         const filterItems = items.filter(item => item.title.toLowerCase().includes(searchText.toLowerCase()));
         console.log(filterItems);
-        return (isLoading ? [...Array(8)] : filterItems).map((item, i) => <Card {...item} 
+        return (isLoading ? [...Array(8)] : filterItems).map((item, i) => <Card {...item}
         key={i}
         onPlus={ (obj) => addItemToCart(obj)} 
         onFavorites={ (obj) => addInToFavorites(obj) }
@@ -26,9 +30,9 @@ function Home ({
               <div className="d-flex align-center justify-between mb-40">
                 <h1 className='search-title'>{searchText ? `Поиск по запросу: '${searchText}'` : "Все кросовки"}</h1>
                 <div className="search-block d-flex">
-                  <img src="img/search.svg" alt="Search" />
+                  <img src={search} alt="Search" />
                   <input onChange={searchItems} value={searchText} placeholder="Поиск..." />
-                  { searchText && <img onClick={() => setSearchText('') } className="clear-input cu-p" src="img/clear-input.svg" alt="Remove"/>}
+                  { searchText && <img onClick={() => setSearchText('') } className="clear-input cu-p" src={clearInput} alt="Remove"/>}
                 </div>
               </div>
 
