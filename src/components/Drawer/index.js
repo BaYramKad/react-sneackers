@@ -24,6 +24,8 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
   const [isOrder, setOrder] = React.useState(false)
   const [orders, setOrders] = React.useState([])
 
+
+  console.log(123);
   const changeCart = async () => {
     try {
       const {data} = await axios.post('https://60d5a9d3943aa60017768b17.mockapi.io/orders', { items: cartItems })
