@@ -56,7 +56,7 @@ function Drawer({ onCloseCart, removeCard, cartItems, isCart}) {
                   cartItems.map((item, i) => {
                     return <div key={i} className= {`${DrawerStyles.cartItem} d-flex align-center`}>
                     <div
-                      style={ {backgroundImage: `url(${sneakers})`}}
+                      style={ {backgroundImage: `url(${require(`/test-react/react-sneackers/src/components/img/sneakers/${item.url}`).default})`}}
                       className={DrawerStyles.cartItemImg}>
                       </div>
 
