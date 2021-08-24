@@ -9,9 +9,6 @@ import unliked from './heart-unliked.svg'
 
 import cheked from './btn-checked.svg'
 import plus from './plus.svg'
-import sneakers from '/test-react/react-sneackers/src/components/img/sneakers/1.jpg'
-
-// require(`/test-react/react-sneackers/src/components/img/sneakers/`);
 
 function Card({id, url, title, price, onPlus, onFavorites, isLoading = false, favorited = false}, props ) {
   const { changeActiveAddToCart} = React.useContext(AppContext)
